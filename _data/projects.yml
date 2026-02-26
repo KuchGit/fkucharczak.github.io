@@ -2,7 +2,7 @@
 # Champs disponibles : title, description, status (actif | terminé), featured, funding,
 #                      tags, url, github, paper, demo
 
-# ── Projets actifs ───────────────────────────────────────────────────────────
+# -- Projets actifs --
 
 - title: "Imagerie cérébrale fonctionnelle et troubles de la conscience — GIGA Neurorecovery Lab"
   description: >
@@ -13,7 +13,11 @@
   status: "actif"
   featured: true
   funding: "Bourse d'excellence Wallonie-Bruxelles International (WBI) — 12 mois"
-  tags: [TEP fonctionnel, Imagerie cérébrale, Troubles de la conscience, Pipeline]
+  tags:
+    - "TEP fonctionnel"
+    - "Imagerie cérébrale"
+    - "Troubles de la conscience"
+    - "Pipeline"
 
 - title: "APEMAV-NR"
   description: >
@@ -25,7 +29,11 @@
   status: "actif"
   featured: true
   funding: "Projet tremplin CHU Montpellier — 13 000 €"
-  tags: [TEP, Perfusion cérébrale, MAV, Neurochirurgie]
+  tags:
+    - "TEP"
+    - "Perfusion cérébrale"
+    - "MAV"
+    - "Neurochirurgie"
 
 - title: "imagodocet.com"
   description: >
@@ -36,10 +44,14 @@
   status: "actif"
   featured: true
   funding: "Bourse pédagogique CEBMN — 4 500 €"
-  tags: [Pédagogie, Imagerie médicale, Simulation, Web]
+  tags:
+    - "Pédagogie"
+    - "Imagerie médicale"
+    - "Simulation"
+    - "Web"
   url: "https://imagodocet.com"
 
-# ── Projets terminés ─────────────────────────────────────────────────────────
+# -- Projets terminés --
 
 - title: "fTEP-COMA"
   description: >
@@ -49,7 +61,11 @@
   status: "terminé"
   featured: false
   funding: "Projet tremplin CHU Montpellier — 10 000 €"
-  tags: [TEP fonctionnel, Coma, Neurologie, Radiotraceur]
+  tags:
+    - "TEP fonctionnel"
+    - "Coma"
+    - "Neurologie"
+    - "Radiotraceur"
 
 - title: "CRANE"
   description: >
@@ -59,15 +75,23 @@
   status: "terminé"
   featured: false
   funding: "Bourse post-doctorale LabEx NUMEV — 4 mois"
-  tags: [TEP, Maladies neurodégénératives, Reconstruction, Intervalles]
+  tags:
+    - "TEP"
+    - "Maladies neurodégénératives"
+    - "Reconstruction"
+    - "Intervalles"
 
 - title: "TEP dynamique et hémorragie sous-arachnoïdienne"
   description: >
     Développement d'outils de TEP dynamique et étude de son intérêt pronostic dans
     l'ischémie retardée chez les patients victimes d'hémorragies sous-arachnoïdiennes.
     Mené en collaboration avec le service de neuro-réanimation du CHU Gui de Chauliac
-    (Dr Szabo, Dr Chalard). Collaboration toujours en cours.
+    (Dr Szabo, Dr Chalard).
   status: "terminé"
   featured: false
   funding: "Poste d'assistant associé des universités (CHU Montpellier, 2019-2020)"
-  tags: [TEP dynamique, Hémorragie sous-arachnoïdienne, Pronostic, Neuro-réanimation]
+  tags:
+    - "TEP dynamique"
+    - "Hémorragie sous-arachnoïdienne"
+    - "Pronostic"
+    - "Neuro-réanimation"
