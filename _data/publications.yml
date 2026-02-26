@@ -1,33 +1,93 @@
-# Liste des publications
+# Publications de Florentin Kucharczak
 # Champs disponibles : title, authors, venue, year, pdf, doi, arxiv, code, slides, poster
 
-- title: "Titre de l'article A"
-  authors: "Votre Nom, Co-auteur B, Co-auteur C"
-  venue: "Nom de la revue ou conférence, vol. 42, pp. 1–15"
+# ── Articles de revues ──────────────────────────────────────────────────────
+
+- title: "Association of Colchicine Use With Myocardial Perfusion Reserve After Myocardial Infarction: An Ancillary Analysis of the COLD-MI Trial"
+  authors: "Paunet T, Kucharczak F, Dubois J, Huet F, Roubille F, Mariano-Goulart D"
+  venue: "Journal of Nuclear Cardiology"
+  year: 2026
+
+- title: "Spatiotemporal dynamics of computed tomography perfusion (CTP) parameters following aneurysmal subarachnoid hemorrhage"
+  authors: "Szabo V, Mesnildrey Q, Dargazanli C, Kucharczak F, et al."
+  venue: "Journal of Cerebral Blood Flow & Metabolism"
   year: 2025
-  pdf: "/assets/papers/article-a.pdf"
-  doi: "https://doi.org/10.xxxx/xxxxx"
-  arxiv: "https://arxiv.org/abs/xxxx.xxxxx"
-  code: "https://github.com/username/repo-a"
 
-- title: "Titre de l'article B"
-  authors: "Co-auteur D, Votre Nom"
-  venue: "Proceedings of Conférence Internationale, 2024"
+- title: "[18F]-FDG PET as a Diagnostic and Monitoring Tool in Autoimmune Glial Fibrillary Acidic Protein Astrocytopathy: A Case Report"
+  authors: "Dubois J, Paunet T, Verbeke S, Kucharczak F, Vauchot F"
+  venue: "Clinical Nuclear Medicine"
+  year: 2025
+
+- title: "CT perfusion-guided administration of IV milrinone is associated with a reduction in delayed cerebral infarction after subarachnoid hemorrhage"
+  authors: "Szabo V, Baccialone S, Kucharczak F, Dargazanli C, et al."
+  venue: "Scientific Reports"
   year: 2024
-  pdf: "/assets/papers/article-b.pdf"
-  doi: "https://doi.org/10.xxxx/xxxxx"
-  slides: "/assets/slides/article-b-slides.pdf"
 
-- title: "Titre de l'article C"
-  authors: "Votre Nom"
-  venue: "Journal of Important Research, vol. 10, pp. 200–215"
+- title: "Comparing two bootstrapped regions in images: the D-test"
+  authors: "Kucharczak F, Couso I, Strauss O, Mariano-Goulart D"
+  venue: "IRBM, vol. 45, no. 1"
+  year: 2024
+
+- title: "Evaluation of 18-FDG PET diagnostic capabilities for cancer screening in heart transplant patients, a retrospective study"
+  authors: "Sagnes J, Paunet T, Battistella P, Mariano-Goulart D, Kucharczak F"
+  venue: "Medicine (Baltimore), 102(39)"
   year: 2023
-  pdf: "/assets/papers/article-c.pdf"
-  doi: "https://doi.org/10.xxxx/xxxxx"
 
-- title: "Titre de l'article D"
-  authors: "Votre Nom, Co-auteur E"
-  venue: "Workshop on [Sujet], CVPR 2022"
+- title: "Functional PET Neuroimaging in Consciousness Evaluation: Study Protocol"
+  authors: "Paunet T, Mariano-Goulart D, Deverdun J, Le Bars E, Fourcade M, Kucharczak F"
+  venue: "Diagnostics, 13(12)"
+  year: 2023
+
+- title: "Giant cell arteritis presenting with progressive dysphagia and tongue necrosis"
+  authors: "Payen C, Kucharczak F, Favier V"
+  venue: "CMAJ — Canadian Medical Association Journal, 194(11):E420"
   year: 2022
-  arxiv: "https://arxiv.org/abs/xxxx.xxxxx"
-  poster: "/assets/posters/article-d-poster.pdf"
+  doi: "https://doi.org/10.1503/cmaj.211466"
+
+- title: "Left ventricle function assessment using gated first-pass 18F-FDG PET: Validation against equilibrium radionuclide angiography"
+  authors: "Ben Bouallègue F, Maïmoun L, Kucharczak F, et al."
+  venue: "Journal of Nuclear Cardiology, 28(2):594–603"
+  year: 2021
+
+- title: "Brain 18F-FDG PET analysis via interval-valued reconstruction: proof of concept for Alzheimer's disease diagnosis"
+  authors: "Kucharczak F, Suau M, Strauss O, Ben Bouallègue F, Mariano-Goulart D"
+  venue: "Annals of Nuclear Medicine, 34(8):565–574"
+  year: 2020
+
+- title: "Interval-based reconstruction for uncertainty quantification in PET"
+  authors: "Kucharczak F, Ben Bouallègue F, Strauss O, Mariano-Goulart D"
+  venue: "IEEE Transactions on Medical Imaging, 38(6):1513–1523"
+  year: 2019
+
+- title: "Fuzzy-based interval-valued reconstruction for PET imaging"
+  authors: "Kucharczak F, Loquin K, Buvat I, Strauss O, Mariano-Goulart D"
+  venue: "Physics in Medicine & Biology, 63(3):035014"
+  year: 2018
+
+# ── Chapitres de livres ──────────────────────────────────────────────────────
+
+- title: "On Maxitive Image Processing"
+  authors: "Strauss O, Loquin K, Kucharczak F"
+  venue: "In: Fuzzy Approaches for Soft Computing and Approximate Reasoning. Studies in Fuzziness and Soft Computing, vol. 394. Springer"
+  year: 2021
+  type: book_chapter
+
+# ── Conférences ──────────────────────────────────────────────────────────────
+
+- title: "Interval-valued JPEG decompression for artifact suppression"
+  authors: "Itier V, Kucharczak F, Strauss O, Puech W"
+  venue: "IEEE International Conference on Image Processing (ICIP)"
+  year: 2018
+  type: conference
+
+- title: "Regularized selection: A new paradigm for inverse based regularized image reconstruction techniques"
+  authors: "Kucharczak F, Mory C, Strauss O, Comby F, Mariano-Goulart D"
+  venue: "International Conference on Image Processing (ICIP), Beijing, China"
+  year: 2017
+  type: conference
+
+- title: "A conceptual framework for autonomous robotic manipulation of valves using visual sensing"
+  authors: "Faria R, Kucharczak F, Freitas G, Leite A"
+  venue: "IFAC — International Federation of Automatic Control, vol. 48, pp. 221–228"
+  year: 2015
+  type: conference
