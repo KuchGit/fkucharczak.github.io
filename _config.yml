@@ -1,0 +1,48 @@
+title: "Prénom Nom"
+description: "Chercheur en [domaine] — Institution"
+baseurl: ""
+url: "https://username.github.io"
+
+# Informations personnelles
+author:
+  name: "Prénom Nom"
+  title: "Maître de conférences / Chercheur"
+  institution: "Université de ..."
+  department: "Département de ..."
+  email: "prenom.nom@institution.fr"
+  bio: >
+    Je suis chercheur en [domaine] à [institution].
+    Mes travaux portent sur [thèmes de recherche].
+    Je m'intéresse notamment à [intérêts spécifiques].
+  links:
+    - label: "Google Scholar"
+      icon: "scholar"
+      url: "https://scholar.google.com/citations?user=XXXXX"
+    - label: "GitHub"
+      icon: "github"
+      url: "https://github.com/username"
+    - label: "ORCID"
+      icon: "orcid"
+      url: "https://orcid.org/0000-0000-0000-0000"
+    - label: "CV (PDF)"
+      icon: "cv"
+      url: "/assets/cv.pdf"
+
+# Navigation
+nav:
+  - label: "À propos"
+    url: "/"
+  - label: "Publications"
+    url: "/publications/"
+  - label: "Cours"
+    url: "/teaching/"
+  - label: "Projets"
+    url: "/projects/"
+
+# Jekyll
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

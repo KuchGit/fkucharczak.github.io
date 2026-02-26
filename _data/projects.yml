@@ -1,0 +1,32 @@
+# Liste des projets
+# Champs disponibles : title, description, status (actif | terminé), featured, funding,
+#                      tags, url, github, paper, demo
+
+- title: "Nom du projet A"
+  description: >
+    Description concise du projet A : objectifs, approche, résultats attendus.
+    Ce projet vise à [objectif] en utilisant [méthode].
+  status: "actif"
+  featured: true
+  funding: "ANR / ERC / Labex ..."
+  tags: [Machine Learning, NLP, Python]
+  github: "https://github.com/username/projet-a"
+  paper: "#"
+
+- title: "Nom du projet B"
+  description: >
+    Description concise du projet B. Collaboration avec [partenaires].
+  status: "actif"
+  featured: true
+  tags: [Vision par ordinateur, PyTorch]
+  github: "https://github.com/username/projet-b"
+  demo: "https://demo.exemple.fr"
+
+- title: "Ancien projet C"
+  description: >
+    Projet terminé ayant abouti à [résultats]. Code et données disponibles en ligne.
+  status: "terminé"
+  featured: false
+  tags: [Statistiques, R, Open Data]
+  github: "https://github.com/username/projet-c"
+  paper: "https://doi.org/10.xxxx/xxxxx"

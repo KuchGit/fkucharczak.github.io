@@ -1,0 +1,396 @@
+/* ============================================================
+   Variables
+   ============================================================ */
+:root {
+  --color-bg:        #ffffff;
+  --color-text:      #1a1a1a;
+  --color-muted:     #555555;
+  --color-subtle:    #888888;
+  --color-border:    #dde1e7;
+  --color-accent:    #1a4f8a;
+  --color-accent-hover: #0d3561;
+  --color-tag-bg:    #eef2f7;
+  --color-tag-text:  #1a4f8a;
+  --font-sans:       -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono:       "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --max-width:       860px;
+  --sidebar-width:   220px;
+}
+
+/* ============================================================
+   Reset & base
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover { color: var(--color-accent-hover); text-decoration: underline; }
+
+/* ============================================================
+   Layout
+   ============================================================ */
+.site-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.site-header {
+  border-bottom: 2px solid var(--color-accent);
+  padding: 1.5rem 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.header-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.site-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+.site-title:hover { text-decoration: none; color: var(--color-accent); }
+
+.site-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 0.15rem;
+}
+
+/* Navigation */
+.site-nav {
+  margin-top: 0.75rem;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.site-nav a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* ============================================================
+   Home layout (sidebar + main)
+   ============================================================ */
+.home-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .home-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 1.5rem;
+}
+
+.sidebar-photo {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+}
+
+.sidebar-photo-placeholder {
+  width: 180px;
+  height: 200px;
+  background: var(--color-tag-bg);
+  border: 1px dashed var(--color-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-subtle);
+  font-size: 0.78rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.sidebar-role,
+.sidebar-institution {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.sidebar-links a {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.sidebar-links a:hover { color: var(--color-accent); text-decoration: none; }
+
+.sidebar-links .link-icon {
+  display: inline-block;
+  width: 14px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* ============================================================
+   Page content
+   ============================================================ */
+.page-content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.page-content h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-content h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 1rem 0 0.3rem;
+}
+
+.page-content p {
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+}
+
+/* ============================================================
+   Publication list
+   ============================================================ */
+.pub-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pub-item {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 0.5rem 1rem;
+  align-items: start;
+}
+
+.pub-year {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-subtle);
+  padding-top: 0.15rem;
+  text-align: right;
+}
+
+.pub-body {}
+
+.pub-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.pub-authors {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin: 0.1rem 0;
+}
+
+.pub-venue {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.pub-links {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pub-link {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid #c8d8ec;
+}
+.pub-link:hover {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* ============================================================
+   Course / Teaching list
+   ============================================================ */
+.course-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-item {
+  border-left: 3px solid var(--color-border);
+  padding-left: 0.9rem;
+}
+
+.course-item:hover { border-left-color: var(--color-accent); }
+
+.course-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.course-meta {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin: 0.1rem 0 0.3rem;
+}
+
+.course-desc {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+/* ============================================================
+   Projects list
+   ============================================================ */
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-item {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+.project-item:hover { border-color: var(--color-accent); }
+
+.project-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  font-size: 0.83rem;
+  color: var(--color-muted);
+  margin: 0.35rem 0 0.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.project-tag {
+  font-size: 0.72rem;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.78rem;
+  color: var(--color-subtle);
+  text-align: center;
+}
+
+/* ============================================================
+   Utility
+   ============================================================ */
+.section-intro {
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+.page-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.page-desc {
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}

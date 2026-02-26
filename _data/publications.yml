@@ -1,0 +1,33 @@
+# Liste des publications
+# Champs disponibles : title, authors, venue, year, pdf, doi, arxiv, code, slides, poster
+
+- title: "Titre de l'article A"
+  authors: "Votre Nom, Co-auteur B, Co-auteur C"
+  venue: "Nom de la revue ou conférence, vol. 42, pp. 1–15"
+  year: 2025
+  pdf: "/assets/papers/article-a.pdf"
+  doi: "https://doi.org/10.xxxx/xxxxx"
+  arxiv: "https://arxiv.org/abs/xxxx.xxxxx"
+  code: "https://github.com/username/repo-a"
+
+- title: "Titre de l'article B"
+  authors: "Co-auteur D, Votre Nom"
+  venue: "Proceedings of Conférence Internationale, 2024"
+  year: 2024
+  pdf: "/assets/papers/article-b.pdf"
+  doi: "https://doi.org/10.xxxx/xxxxx"
+  slides: "/assets/slides/article-b-slides.pdf"
+
+- title: "Titre de l'article C"
+  authors: "Votre Nom"
+  venue: "Journal of Important Research, vol. 10, pp. 200–215"
+  year: 2023
+  pdf: "/assets/papers/article-c.pdf"
+  doi: "https://doi.org/10.xxxx/xxxxx"
+
+- title: "Titre de l'article D"
+  authors: "Votre Nom, Co-auteur E"
+  venue: "Workshop on [Sujet], CVPR 2022"
+  year: 2022
+  arxiv: "https://arxiv.org/abs/xxxx.xxxxx"
+  poster: "/assets/posters/article-d-poster.pdf"

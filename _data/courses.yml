@@ -1,0 +1,28 @@
+# Liste des cours
+# Champs disponibles : title, level, institution, year, hours, description, url, slides, notes, code, video
+
+- title: "Introduction à [Domaine]"
+  level: "Licence 3"
+  institution: "Université de ..."
+  year: 2025
+  hours: 24
+  description: "Cours d'introduction couvrant les fondements de [domaine] : théorie, algorithmes, applications."
+  slides: "/assets/courses/intro-domaine-slides.pdf"
+  notes: "/assets/courses/intro-domaine-notes.pdf"
+
+- title: "Séminaire avancé en [Sujet]"
+  level: "Master 2"
+  institution: "Université de ..."
+  year: 2025
+  hours: 18
+  description: "Séminaire de recherche explorant les dernières avancées en [sujet]."
+  slides: "https://github.com/username/seminaire-sujet"
+
+- title: "Atelier pratique : [Outil/Méthode]"
+  level: "Master 1"
+  institution: "École d'été / Formation continue"
+  year: 2024
+  hours: 6
+  description: "Atelier hands-on sur l'utilisation de [outil] pour [application]."
+  code: "https://github.com/username/atelier-outil"
+  video: "https://youtube.com/watch?v=xxxxx"
